@@ -43,7 +43,7 @@ img {
 .container {
   width: 100%;
   max-width: 320px;
-  padding: 96px 16px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -76,7 +76,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: inline-block;
-  margin-right: 76px;
+  /* margin-right: 76px; */
+  padding: 17px 0;
 }
 .accent-black {
   color: #2e2f42;
@@ -89,12 +90,14 @@ img {
 
 /* nav system */
 
+
 .header-list {
   color: #2e2f42;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   gap: 40px;
+  display: none;
 }
 .header-list :hover,
 .header-list :focus {
@@ -127,6 +130,7 @@ img {
 .contacts {
   font-style: normal;
   gap: 40px;
+  display: none;
 }
 .contacts-list {
   gap: 40px;
@@ -143,6 +147,13 @@ img {
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
+}
+
+.open-menu-btn {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 /* hero */
@@ -821,11 +832,12 @@ row-gap: 72px;
   width: calc((100% - 1 * 24px) / 2);
   padding-bottom: 0;
 }
-}
+
 .order-name {
   justify-content: start;
 }
-  /* -------------------------------- */
+ 
+ /* -------------------------------- */
 
   .container-team {
     padding: 0 108px;
@@ -878,7 +890,7 @@ row-gap: 72px;
       display: flex;
     }
 
-.description {
+ .description {
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
@@ -905,5 +917,6 @@ row-gap: 72px;
   .portfolio-order {
     width: calc((100% - 2 * 24px) / 3);
   }
-}
 
+}
+}
