@@ -228,7 +228,7 @@ img {
 }
 
 .feuters-container {
-  padding: 96px 0;
+  padding: 96px 16px;
 }
 
 .order-name {
@@ -381,7 +381,6 @@ img {
   align-items: center;
   flex-wrap: wrap;
 }
-
 
 .portfolio-container {
   padding: 32px 16px;
@@ -857,6 +856,24 @@ img {
     max-width: 496px;
   }
 
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg-tab.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/Dark-bg-tab-x2.jpg);
+    }
+  }
+
   .description {
     display: flex;
     flex-wrap: wrap;
@@ -961,8 +978,26 @@ img {
     margin-bottom: 48px;
   }
 
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/people-office-x2.jpg);
+    }
+  }
+
   .feuters-container {
-    padding: 120px 0;
+    padding: 120px 16px;
   }
 
   .feuters-wrapper {
