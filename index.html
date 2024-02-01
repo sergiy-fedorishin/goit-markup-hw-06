@@ -52,6 +52,69 @@
                 </svg>
             </button>
         </div>
+
+        <div class="mobil-menu">
+            <div>
+                <button class="close-menu-btn" type="button">
+                    <svg width="8" height="8">
+                        <use href="./images/icons.svg#icon-close" />
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="mobil-menu-list">
+                        <li class="mobil-menu-item">
+                            <a class="curent-menu mobil-menu-link" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mobil-menu-item">
+                            <a class="mobil-menu-link" href="">Portfolio</a>
+                        </li>
+                        <li class="mobil-menu-item">
+                            <a class="mobil-menu-link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="mobil-menu-contacts">
+                    <ul class="mobil-menu-contacts-list">
+                        <li class="mobil-menu-contacts-item">
+                            <a class="mobil-menu-contacts-link phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mobil-menu-contacts-item">
+                            <a class="mobil-menu-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <ul class="menu-socials">
+                <li class="menu-socials-list">
+                    <a href="www.instagram.com" target="_blank" class="menu-socials-linc">
+                        <svg height="24" width="24" class="menu-social-icon">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-socials-list">
+                    <a href="www.twitter.com" target="_blank" class="menu-socials-linc">
+                        <svg height="24" width="24" class="menu-social-icon">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-socials-list">
+                    <a href="www.faceebook.com" target="_blank" class="menu-socials-linc">
+                        <svg height="24" width="24" class="menu-social-icon">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="menu-socials-list">
+                    <a href="www.linkedin.com" target="_blank" class="menu-socials-linc">
+                        <svg height="24" width="24" class="menu-social-icon">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class="main">
@@ -283,7 +346,76 @@
                         </div>
                     </li>
                 </ul>
+                <ul class="socials">
+                    <li class="socials-list">
+                        <a href="www.instagram.com" target="_blank" class="socials-linc">
+                            <svg height="16" width="16" class="social-icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-list">
+                        <a href="www.twitter.com" target="_blank" class="socials-linc">
+                            <svg height="16" width="16" class="social-icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-list">
+                        <a href="www.faceebook.com" target="_blank" class="socials-linc">
+                            <svg height="16" width="16" class="social-icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-list">
+                        <a href="www.linkedin.com" target="_blank" class="socials-linc">
+                            <svg height="16" width="16" class="social-icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
+            </li>
+            <li class="team-order order-team">
+                <img srcset="./images/team/team2.jpg x1,
+                                                     ./images/team/ford-x2.jpg x2" src="./images/team/team2.jpg"
+                    alt="tom ford" width="264" class="team-img">
+                <div class="team-container">
+                    <h3 class="team-name">Tom Ford</h3>
+                    <p class="team-worck">Frontend Developer</p>
+                    <ul class="socials">
+                        <li class="socials-list">
+                            <a href="" class="socials-linc">
+                                <svg height="16" width="16" class="social-icon">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-list">
+                            <a href="" class="socials-linc">
+                                <svg height="16" width="16" class="social-icon">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-list">
+                            <a href="" class="socials-linc">
+                                <svg height="16" width="16" class="social-icon">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="socials-list">
+                            <a href="" class="socials-linc">
+                                <svg height="16" width="16" class="social-icon">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </section>
 
         <!-- our portfolio -->
@@ -487,7 +619,7 @@
 
     <!-- modal window -->
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
         <div class="modal">
             <button type="button" class="modal-btn" aria-label="modal close dutton">
                 <svg class="modal-close-icon" width="8" height="8">
@@ -536,15 +668,17 @@
 
                 <div class="modal-footer">
                     <label class="form-agreement">
-                        <input class="checkbox visually-hidden" type="checkbox" name="user_agreement" value="false"
+                        <input class="checkbox visually-hidden" type="checkbox" name="user_agreement" value="true"
                             checked />
                         <span class="form-agreement-checkbox">
                             <svg class="checkbox-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-vector"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the <a class="checkbox-linc" href="">Privacy
-                            Policy</a>
+                        <span>
+                            I accept the terms and conditions of the <a class="checkbox-linc" href="">Privacy
+                                Policy</a>
+                        </span>
                     </label>
                 </div>
                 <button class="button-hero form-btn" type="submit">Send</button>
