@@ -129,6 +129,7 @@ img {
 .contacts-link {
   color: #434455;
   font-weight: 400;
+  font-style: normal;
   font-size: 20px;
   line-height: 1.16;
   letter-spacing: 0.02em;
@@ -276,7 +277,8 @@ img {
   line-height: 1.1;
   letter-spacing: 0.02em;
   max-width: 216px;
-  margin: 72px auto;
+  margin: 0px auto;
+  margin-bottom: 72px;
 }
 
 .button-hero {
@@ -367,7 +369,6 @@ img {
 
 
 .team-container {
-  margin-top: 32px;
   padding: 32px 0;
 }
 
@@ -470,6 +471,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 48px 24px;
 }
 
 .portfolio-container {
@@ -484,7 +486,7 @@ img {
   background-color: #ffffff;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: calc((100% - 48px) / 1);
+  /* width: calc((100% - 48px) / 1); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -609,13 +611,16 @@ img {
   fill: #f4f4fd;
 }
 
+.footer-social {
+    margin-bottom: 72px;
+}
+
 .socials-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 /* footer form */
@@ -907,7 +912,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 732px;
+    max-width: 768px;
   }
 
   .header-logo {
@@ -945,6 +950,7 @@ img {
   }
 
   .hero {
+    padding: 112px;
     max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1014,7 +1020,6 @@ margin-bottom: 0;
   .portfolio-content-list {
     row-gap: 72px;
     column-gap: 24px;
-    padding-bottom: 92px;
   }
 
   .portfolio-order {
@@ -1024,14 +1029,25 @@ margin-bottom: 0;
       0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   }
 
+     .portfolio-order:last-child {
+       margin-bottom: 0;
+     }
+
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
+    align-items: baseline;
+    justify-content: flex-start;
+    max-width: 530px;
   }
 
   .footer-logo {
     display: inline-block;
+  }
+
+  .containe-lrogo {
+    margin-bottom: 0;
   }
 
   .subscribe {
@@ -1082,7 +1098,8 @@ margin-bottom: 0;
   }
 
   .hero {
-    min-width: 1158px;
+    min-width: 1440px;
+    padding-top: 118px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1100,10 +1117,6 @@ margin-bottom: 0;
     }
   }
 
-  .feuters-container {
-    padding: 120px 16px;
-  }
-
   .feuters-wrapper {
     display: flex;
   }
@@ -1119,7 +1132,6 @@ margin-bottom: 0;
   }
 
   .team-container {
-    padding: 32px 0;
     justify-content: center;
     align-items: center;
   }
@@ -1130,11 +1142,6 @@ margin-bottom: 0;
 
   .order-team {
     width: calc((100% - 3 * 24px) / 4);
-  }
-
-  .team-content-list:last-child {
-    margin: 0;
-    padding-bottom: 32px;
   }
 
   .portfolio-order {
