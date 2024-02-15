@@ -898,8 +898,8 @@ img {
   min-height: 56px;
 }
 
-/* ============================================================== */
-/* ============================================================= */
+/* ======================================== */
+/* ======================================== */
 /* Tablet */
 
 @media screen and (min-width: 768px) {
@@ -1011,11 +1011,11 @@ img {
     margin-bottom: 0;
   }
   /* --------------- */
-  
-    .portfolio-content-list {
-     row-gap: 72px; 
-   column-gap: 24px;
-  } 
+
+  .portfolio-content-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
 
   .portfolio-order {
     width: calc((100% - 24px) / 2);
@@ -1157,7 +1157,6 @@ img {
   .portfolio-order {
     width: calc((100% - 2 * 24px) / 3);
   }
-
 
   .footer-container {
     align-items: baseline;
